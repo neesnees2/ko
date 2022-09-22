@@ -76,14 +76,14 @@ fi
 echo -e "${RED}Installing XRAY${NC}"
 sleep 2
 
-wget https://raw.githubusercontent.com/bracoli/ko/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/bracoli/ko/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/neesnees2/ko/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/neesnees2/ko/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/bracoli/ko/main/xray-menu.sh" && chmod +x menu
-wget -O xp "https://raw.githubusercontent.com/bracoli/ko/main/xp.sh" && chmod +x xp
+wget -O menu "https://raw.githubusercontent.com/neesnees2/ko/main/xray-menu.sh" && chmod +x menu
+wget -O xp "https://raw.githubusercontent.com/neesnees2/ko/main/xp.sh" && chmod +x xp
 wget -O installer "https://raw.githubusercontent.com/apih46/ok/main/BOT_PANEL/installer.sh" && chmod +x installer
 wget -O bbt "https://raw.githubusercontent.com/apih46/ok/main/BOT_PANEL/bbt.sh" && chmod +x bbt
-wget -O tcp "https://raw.githubusercontent.com/bracoli/ko/main/tcp.sh" && chmod +x tcp
+wget -O tcp "https://raw.githubusercontent.com/neesnees2/ko/main/tcp.sh" && chmod +x tcp
 timedatectl set-timezone Asia/Kuala_Lumpur
 echo "0 */2 * * * root pkill -e bash" >>/etc/crontab
 echo "0 0 * * * root xp" >>/etc/crontab
